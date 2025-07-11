@@ -11,6 +11,7 @@ export class ProductServiceService {
     return this.httpClient.get(this.ApiURL);
   }
   getProduct() {
+    )
     
   }
 }
