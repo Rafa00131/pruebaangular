@@ -3,10 +3,13 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { ProductInterface } from '../../Interface/ProductInterface';
 import { ProductService } from '../../Services/product.service';
+import { RouterModule} from '@angular/router';
+import { MatIconModule } from '@angular/material/icon';
+import 'animate.css';
 @Component({
   selector: 'app-card',
   standalone: true,
-  imports: [MatCardModule,MatButtonModule],
+  imports: [MatCardModule,MatButtonModule,RouterModule,MatIconModule],
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.css']
 })
