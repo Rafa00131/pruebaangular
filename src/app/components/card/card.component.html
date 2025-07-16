@@ -1,0 +1,26 @@
+@for (item of productList; track $index) {
+    <div style="width: 500px; margin: 50px auto;">
+    <mat-card>
+        <mat-card-header>
+            <div mat-card-avatar class="profile-image">
+                <img [src]="item.image" [alt]="item.title + ' thumbnail'" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">
+            </div>
+            <mat-card-title>{{ item.title }}</mat-card-title>
+            <mat-card-subtitle>{{ item.category }}</mat-card-subtitle>
+        </mat-card-header>
+    <img mat-card-image 
+        [src]="item.image" 
+        [alt]="item.title"
+        style="max-height: 300px; object-fit: contain;">
+    
+    <mat-card-content>
+        <p><strong>Price:</strong> {{ item.price }}</p>
+        <p>{{ item.description }}</p>
+    </mat-card-content>
+
+    <mat-card-actions>
+    
+    </mat-card-actions>
+    </mat-card>
+</div>
+}
