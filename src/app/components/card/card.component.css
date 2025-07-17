@@ -1,9 +1,66 @@
+
 .card-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 50px;
 }
+
+.logo-text{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: #edf0f1;
+    text-decoration:none;
+}
+
+li,a,button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration:none;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%; 
+    background-color: black;
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+    height: 50px;
+    aspect-ratio: 1/1;    /*escalabilidad*/
+    object-fit: contain;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a{
+    transition: all 0.3s ease 0s;
+    
+}
+.nav-links li a:hover{
+    color: #0088a9;
+}
+button {
+    padding: 9px 25px;
+    background-color: rgba(0,116,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0;
+}
+ button:hover{
+    background-color: rgba(0,136,169,0.8);
+ }
 
 .card-wrapper {
   width: 300px;
@@ -22,6 +79,13 @@
   height: 40px;
   border-radius: 50%;
   object-fit: contain;
+}
+
+.montserrat-nav {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .product-img {

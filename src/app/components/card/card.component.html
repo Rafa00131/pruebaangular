@@ -1,8 +1,16 @@
-<h1 style="text-align: center; margin: 40px auto;" class="animate__animated animate__fadeInDown">
-  HarkShop
-  <h2></h2>
-</h1>
-
+<header class="header">
+    <img class="logo" src="assets/images/logo.svg" alt="logo">
+    <h1 class="logo-text" style="margin-right: 490px;">HarkShop</h1>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#"></a>Catálogo</li>
+            <li><a href="#"></a>Delivery</li>
+            <li><a href="#"></a>Ofertas</li>
+        </ul>
+    </nav>
+    <a class="cta" href="#"><button>Contacto</button></a>
+</header>
+    
 <div class="card-grid">
   @for (item of productList; track $index) {
     <div class="card-wrapper animate__animated animate__fadeInUp">
@@ -32,5 +40,6 @@
     </div>
   }
 </div>
+
 
 
