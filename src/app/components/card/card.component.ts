@@ -14,6 +14,7 @@ import 'animate.css';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit{
+  
   productList: ProductInterface[]=[];
   constructor(private productService: ProductService){}
   ngOnInit(): void {
@@ -21,9 +22,11 @@ export class CardComponent implements OnInit{
   }
   getProducts(){
     this.productService.getProducts().subscribe({
-      next: (result) =>{
-        this.productList = result;
-      },
+      next: (result:ProductInterface[]) =>{
+        this.productList = result.map((product:ProductInterface) => ({
+        ...product,
+        expanded: false
+      }))},
       error: (err) =>{
         console.log(err);
       }
